@@ -57,7 +57,8 @@ function setNoomba() {
 module.exports = {
 	startDelete: function startDelete() {
 		console.log("It has started!!!!");
-		deleteCmds();
+		console.log("Deletion is currently unavailable!")
+		//deleteCmds();
 	},
 
 	getRandomInt: function getRandomInt(max) {

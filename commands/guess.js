@@ -81,7 +81,12 @@ module.exports = {
                 }
                 const random = getRandomInt(locale.randomResponses.count)
                 interaction.reply({ content: locale.randomResponses[random] });
-                setNumber();
+                var randomChance = 10;
+                var chance = Math.floor(Math.random() * 100+1);
+
+                if(chance <= randomChance) {
+                    setNumber();
+                }
             }
         }, 2000 )
     }
