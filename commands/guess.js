@@ -10,15 +10,7 @@ module.exports = {
     cooldown: 5,
 	data: new SlashCommandBuilder()
 		.setName('guess')
-        .setNameLocalizations({
-            de: 'erraten',
-            fr: 'deviner',
-        })
 		.setDescription('Make your guess and see if you can delete the bot.')
-        .setDescriptionLocalizations({
-            de: 'Machen Sie Ihre Vermutung und prüfen Sie, ob Sie den Bot löschen können.',
-            fr: 'Faites votre supposition et voyez si vous pouvez supprimer le bot.',
-        })
         .addIntegerOption(option => 
             option.setName("number")
                 .setNameLocalizations({
@@ -28,11 +20,7 @@ module.exports = {
                 .setRequired(true)
                 .setMinValue(1)
                 .setMaxValue(5000)
-                .setDescription("What number would you like to guess?")
-                .setDescriptionLocalizations({
-                    de: 'Welche Zahl möchten Sie erraten?',
-                    fr: 'Quel nombre aimeriez-vous deviner ?',
-                })),
+                .setDescription("What number would you like to guess?")),
 	async execute(interaction) {
         const client = interaction.client
         const guess = interaction.options.getInteger("number")
