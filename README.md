@@ -1,10 +1,11 @@
 # Self Deleting Bot Archived
-## Version Information
-| Current Version | Next Version |
+## ~~Version Information~~
+~~| Current Version | Next Version |~~
 | :---: | :---: |
-| 1.0.0 | 2.0.0 |
+~~| 1.0.0 | 2.0.0 |~~
 
-Bit version: 4.0.0
+~~Bit version: 4.0.0~~
+Development continues as a [Bit-Plugin](https://github.com/Bit-Plugins/self-deleting-plugin)
 
 ## FAQ
 ### Why is this archived?
